@@ -1,0 +1,33 @@
+{
+  "name": "cw-warmup",
+  "version": "0.0.0",
+  "description": "cw-warmup =========",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "lint": "eslint src/ test/ tools/",
+    "test": "mocha --recursive",
+    "cover": "istanbul cover _mocha -- --recursive && istanbul check --statements 50 --branches 50 --functions 50 --lines 50",
+    "dev": "nodemon src/main.js",
+    "watch": "mocha watch --reporter min --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/listochkin/cw-warmup.git"
+  },
+  "author": "cw team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/listochkin/cw-warmup/issues"
+  },
+  "homepage": "https://github.com/listochkin/cw-warmup",
+  "devDependencies": {
+    "express": "^4.6.1",
+    "chai": "^1.9.1",
+    "mocha": "^1.21.0",
+    "request": "^2.39.0",
+    "eslint": "^0.7.4",
+    "nodemon": "^1.2.1",
+    "istanbul": "^0.3.0"
+  }
+}
